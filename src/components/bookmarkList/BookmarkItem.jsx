@@ -1,13 +1,10 @@
 import React, { useState } from 'react'
+import useSwitchPassword from '../../hook/useSwitchPassword'
 import MyButton from '../UI/MyButton/MyButton'
 
 function BookmarkItem({ bookmark, index, setCurrModalStatus, setItemForEdit, setItemForDelete }) {
-    const [showPassword, setShowPassword] = useState(false)
+    const [showPassword, onSwitch] = useSwitchPassword()
     const hidenPassword = Array(bookmark.password.length).fill('*').join('')
-
-    const onShow = () => {
-        setShowPassword(prev => !prev)
-    }
 
     const onEdit = () => {
         setItemForEdit(bookmark);
@@ -36,12 +33,9 @@ function BookmarkItem({ bookmark, index, setCurrModalStatus, setItemForEdit, set
                 </div>
             </div>
             <div className='buttons'>
-                <MyButton className='show' onClick={onShow}>show</MyButton>
+                <MyButton className='show' onClick={onSwitch}>show</MyButton>
                 <MyButton className='edit' onClick={onEdit}>edit</MyButton>
                 <MyButton className='delete' onClick={onDelete}>delete</MyButton>
-                {/* <button onClick={onShow}>show</button>
-                <button onClick={onEdit}>edit</button>
-                <button onClick={onDelete}>delete</button> */}
             </div>
         </div>
     )
