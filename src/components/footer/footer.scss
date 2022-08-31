@@ -1,0 +1,15 @@
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #18181b;
+    color: #fff;
+
+    a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+            color: #bf94ff;
+        }
+    }
+}

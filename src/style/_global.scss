@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+  background: #a1a1a1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(82, 82, 82);
+}
+
+body {
+  background-color: #0e0e10;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 375px;
+    overflow: hidden;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+.main {
+  flex-grow: 1;
+  padding: 20px 15px;
+}
+
+.conteiner {
+    max-width:1320px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

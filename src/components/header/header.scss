@@ -1,0 +1,46 @@
+.header {
+    padding: 20px 0;
+    color: #fff;
+    background-color: #18181b;
+}
+
+.header_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: inherit;
+
+        &:hover {
+            color: #000;
+            color: #bf94ff;
+        }
+    }
+
+    .dashboard {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .loginPanel {
+        .userTrue {
+            padding: 7px 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .logOut {
+            padding: 7px;
+            border: none;
+            background-color: transparent;
+            color: inherit;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #464649;
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.form {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #18181b;
+    box-shadow: 0 0 20px #a774f3;
+
+    label {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    input {
+        display: block;
+        margin-top: 5px;
+        width: 100%;
+        border-radius: 5px;
+        border: 2px solid transparent;
+        outline: none;
+        padding: 6px 40px 6px 12px;
+        background-color: #464649;
+        color: #fff;
+
+        &:focus {
+            border-color: #a970ff;
+        }
+    }
+
+    .inputConteiner {
+        position: relative;
+    }
+
+    .showPassword {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .error {
+        margin: 5px 0;
+        color: red;
+        font-size: 14px;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+}

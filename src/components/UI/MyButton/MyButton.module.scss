@@ -1,0 +1,46 @@
+.myBtn {
+    display: block;
+    //min-width: 100px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    background-color: #9147ff;
+    box-shadow: 0 0 20px #6d17ee86;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+
+    &:hover {
+        background-color: #772ce8;
+    }
+}
+
+.myBtn {
+    &.show {
+        background-color: rgb(2, 148, 2);
+        box-shadow: 0 0 15px rgb(0, 131, 0);
+
+        &:hover {
+            background-color: rgb(0, 129, 0);
+        }
+    }
+
+    &.edit {
+        background-color: rgb(189, 140, 8);
+        box-shadow: 0 0 15px rgb(161, 120, 8);
+
+        &:hover {
+            background-color: rgb(194, 120, 9);
+        }
+    }
+
+    &.delete {
+        background-color: rgb(226, 13, 13);
+        box-shadow: 0 0 15px rgb(196, 11, 11);
+
+        &:hover {
+            background-color: rgb(185, 15, 15);
+        }
+    }
+}
