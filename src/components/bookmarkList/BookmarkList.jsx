@@ -42,6 +42,7 @@ function BookmarkList() {
         cancel: () => {
             setCurrModalStatus('')
             setItemToDelete(null)
+            setItemForEdit(null)
         }
     }
 

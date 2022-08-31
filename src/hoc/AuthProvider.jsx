@@ -4,20 +4,23 @@ import { User } from '../classes/User'
 export const AuthContext = createContext(null)
 
 function AuthProvider({children}) {
-    const usersFromLocal = localStorage.getItem('users')
+    const usersFromLocal = localStorage.getItem('users') || '[]'
     const activeUser = localStorage.getItem('user')
     const [user, setUser] = useState(JSON.parse(activeUser))
     const [users, setUsers] = useState(JSON.parse(usersFromLocal))
     const [error, setError] = useState('')
     
     const signUp = (userName, password) => {
-        const existingUser = users.find(user => user.userName === userName)
-        if(existingUser) {
-            setError('User already exist')
-            return 
-        } 
+        if (users) {
+            const existingUser = users.find(user => user.userName === userName)
+            if(existingUser) {
+                setError('User already exist')
+                return 
+            } 
+        }
         const newUser = new User(userName, password)
         setUsers([...users, newUser])
+        setUser(newUser)
     }
 
     const signIn = (userName, password) => {

@@ -33,7 +33,7 @@ function ItemForm({submitFunc, cancelFunc, itemForEdit = template}) {
     return (
         <form className={cl.form} onSubmit={handleSubmit(onSubmit)}>
             <label>
-                User name:
+                Account:
                 <input {...register('account', {
                     required: "This field is required",
                 })} />

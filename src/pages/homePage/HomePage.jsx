@@ -8,7 +8,7 @@ function HomePage() {
     const { user } = useAuth()
     
     return (
-        <div className='homePage'>
+        <div className='homePage conteiner'>
             {user
                 ? <BookmarkList />
                 : <Alert
