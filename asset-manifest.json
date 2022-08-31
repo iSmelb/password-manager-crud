@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/password-manager-crud/static/css/main.1324e509.css",
-    "main.js": "/password-manager-crud/static/js/main.cef85d06.js",
+    "main.css": "/password-manager-crud/static/css/main.d66a5a0d.css",
+    "main.js": "/password-manager-crud/static/js/main.df586abb.js",
     "index.html": "/password-manager-crud/index.html",
-    "main.1324e509.css.map": "/password-manager-crud/static/css/main.1324e509.css.map",
-    "main.cef85d06.js.map": "/password-manager-crud/static/js/main.cef85d06.js.map"
+    "main.d66a5a0d.css.map": "/password-manager-crud/static/css/main.d66a5a0d.css.map",
+    "main.df586abb.js.map": "/password-manager-crud/static/js/main.df586abb.js.map"
   },
   "entrypoints": [
-    "static/css/main.1324e509.css",
-    "static/js/main.cef85d06.js"
+    "static/css/main.d66a5a0d.css",
+    "static/js/main.df586abb.js"
   ]
 }
