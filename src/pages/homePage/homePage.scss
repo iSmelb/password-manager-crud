@@ -37,6 +37,7 @@
     align-items: center;
     background-color: #18181b;
     height: 50px;
+    overflow-x: auto;
 
     .info {
         display: flex;
@@ -68,6 +69,9 @@
 
         .password {
             width: 100%;
+            @media(max-width: 600px) {
+                width: 135px;
+            }
         }
     }
 
@@ -75,5 +79,6 @@
         padding: 0 10px;
         display: flex;
         gap: 10px;
+        flex-shrink: 0;
     }
 }
